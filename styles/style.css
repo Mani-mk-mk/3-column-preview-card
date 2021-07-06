@@ -1,0 +1,180 @@
+:root
+{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    /*paragraphs*/
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    /* background, headings, buttons */
+    --light-gray: hsl(0, 0%, 95%);
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: var(--light-gray);
+    /* font-family: 'Big Shoulders Display', cursive; */
+}
+
+.container
+{
+    padding: 10% 15% 10% 15%;
+    align-items: center;
+    width: 100vw;
+    font-family: 'Lexend Deca', sans-serif;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.card
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card-sedan
+{
+    background-color: var(--bright-orange);
+    align-items: center;
+    padding: 3%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.card-suv
+{
+    background-color: var(--dark-cyan);
+    align-items: center;
+    padding: 3%;
+}
+
+.card-luxury
+{
+    background-color: var(--very-dark-cyan);
+    align-items: center;
+    padding: 3%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+button
+{
+    background-color: var(--light-gray);
+    border: none;
+    padding: 10px 25px;
+    border-radius: 100px;
+    margin-top: 50px;
+}
+
+#btn-sedan
+{
+    color: var(--bright-orange);
+}
+
+#btn-suv
+{
+    color: var(--dark-cyan);
+}
+
+#btn-luxury
+{
+    color: var(--very-dark-cyan);
+}
+
+#btn-sedan:hover
+{    
+    background-color: var(--bright-orange);
+    color: var(--light-gray);
+    border: 2px solid var(--light-gray);
+}
+
+#btn-suv:hover
+{
+    background-color: var(--dark-cyan);
+    color: var(--light-gray);
+    border: 2px solid var(--light-gray);
+}
+
+#btn-luxury:hover
+{
+    background-color: var(--very-dark-cyan);
+    color: var(--light-gray);
+    border: 2px solid var(--light-gray);
+}
+
+
+h1
+{
+    text-transform: uppercase;
+    padding: 30px 0;
+    color: var(--light-gray);
+}
+
+p
+{
+    color: var(--transparent-white);
+    padding: 0;
+}
+
+.attribution 
+{ 
+    font-size: 11px;
+    text-align: center; 
+}
+
+.attribution a 
+{ 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (max-width: 768px) {
+
+    .container
+    {
+        align-items: center;
+        padding: 18% 5%;
+    }
+
+    .card
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-sedan
+    {
+        padding: 30px;
+        border-radius: 0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .card-suv
+    {
+        padding: 30px;
+    }
+
+    .card-luxury
+    {
+        padding: 30px;
+        border-radius: 0;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    button 
+    {
+        margin-bottom: 20px;
+    }
+
+}
